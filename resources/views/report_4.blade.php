@@ -47,6 +47,7 @@
         </style>
     </head>
     <body>
+        <hr />               
         <div class="header">
             <h3>PALAV AGARWAL<br />JP LEGAL</h3>           
             <p style="text-align:center;">

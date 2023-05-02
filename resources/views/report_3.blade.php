@@ -13,7 +13,7 @@
             }
             body {
                 font-family: 'EB Garamond', serif;
-                font-size: 12px;
+                font-size: 13px;
             }
 
             p.sign {
@@ -48,16 +48,16 @@
     </head>
     <body>
         <div class="header">
-            <table width="100%" cellpadding="1" cellspacing="0" border="1">
+            <table width="100%" cellpadding="4" cellspacing="0" border="1">
                 <tr>
-                    <td width="35%"></td>
-                    <td>
-                        <h2>Parishram Resources Pvt ltd</h2>          
-                        <p>
-                            <strong>Plot no 14 A ATC Tower 7 th Floor Sector 18 Gurugram<br />
-                            Haryana 122015</strong> <br>
+                    <td width="38%">
+                        <img src="images/image.png" alt="">
+                    </td>
+                    <td style="padding-top: 35px;">
+                        <span style="font-size:22;"><strong>Parishram Resources Pvt ltd</strong></span><br>
+                        <span style="font-size:16px;"><strong>Plot no 14 A ATC Tower 7 th Floor Sector 18 Gurugram<br />
+                        Haryana 122015</strong> <br></span>
                         
-                        </p>
                     </td>
                 </tr>
             </table>
