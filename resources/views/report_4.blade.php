@@ -30,8 +30,8 @@
             }
 
             p {
-                margin-top: 5px;
-                margin-bottom: 5px;
+                margin-top: 4px;
+                margin-bottom: 4px;
             }
 
             div.true-copy {
@@ -58,8 +58,8 @@
             </p>
         </div>
         <hr />
-        <h3><u>COURT RECORD CHECK</u></h3>
-        <table width="100%" cellpadding="1" cellspacing="0" border="3">
+        <h3><u>COURT RECORD CHECK</u></h3> <br>
+        <table width="100%" cellpadding="1" cellspacing="0" border="2">
             <tr>
                 <td colspan="2">APPLICATION INFORMATION :-</td>
             </tr>          

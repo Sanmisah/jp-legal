@@ -9,11 +9,11 @@ use Illuminate\Support\Str;
 
 class Report
 {
-    public function generate($candidate, $formLayout, $watermark = true)
+    public function generate($candidate, $layout, $watermark)
     {
         $data = $candidate->toArray();
 
-        $pdf = PDF::loadView($formLayout, compact('data'));
+        $pdf = PDF::loadView($layout, compact('data'));
 
         $pdf->setPaper('letter', 'portrait');
         $pdf->render();

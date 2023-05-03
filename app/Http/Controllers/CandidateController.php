@@ -106,8 +106,12 @@ class CandidateController extends Controller
         }
         $candidate->update();
 
+        $watermarkReports = ['report_1', 'report_2'];
+        $layout = Auth::user()->form_layout;
+        $watermark = in_array($layout, $watermarkReports);
+
         $report = new Report();
-        $report->generate($candidate);
+        $report->generate($candidate, $layout, $watermark);
 
         return redirect()->route('candidates.index')->with('success','Candidate updated successfully');
     }

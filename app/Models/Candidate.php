@@ -60,8 +60,12 @@ class Candidate extends Model
         static::created(function (Candidate $candidate) {
             $candidate = Candidate::find($candidate->id);
 
+            $watermarkReports = ['report_1', 'report_2'];
+            $layout = Auth::user()->form_layout;
+            $watermark = in_array($layout, $watermarkReports);
+
             $report = new Report();
-            $report->generate($candidate);
+            $report->generate($candidate, $layout, $watermark);
         });
     }
 
