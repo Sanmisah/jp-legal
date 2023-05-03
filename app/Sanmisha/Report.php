@@ -9,24 +9,16 @@ use Illuminate\Support\Str;
 
 class Report
 {
-    public function generate($candidate)
+    public function generate($candidate, $formLayout, $watermark = true)
     {
         $data = $candidate->toArray();
 
-        if(Auth::user()->form_layout == 'Form_4'){
-            $pdf = PDF::loadView('report_4', compact('data'));            
-        } else  if(Auth::user()->form_layout == 'Form_2'){
-            $pdf = PDF::loadView('report_2', compact('data'));
-        } else if(Auth::user()->form_layout == 'Form_3'){
-            $pdf = PDF::loadView('report_3', compact('data'));
-        } else {
-            $pdf = PDF::loadView('report', compact('data'));
-        }
+        $pdf = PDF::loadView($formLayout, compact('data'));
 
         $pdf->setPaper('letter', 'portrait');
         $pdf->render();
 
-        if(Auth::user()->form_layout == 'Form_1' || Auth::user()->form_layout == 'Form_2'){
+        if($watermark){
             // Instantiate canvas instance
             $canvas = $pdf->getCanvas();
 
@@ -48,7 +40,6 @@ class Report
 
             // Add an image to the pdf
             $canvas->image($imageURL, $x, $y, $imgWidth, $imgHeight);
-
         }
 
         $path = public_path("reports/".Auth::user()->id);
