@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "JP Legal - Advocates & Legal Consultants",
-        "_postman_id": "067a8783-d814-436e-9644-457caafe18e5",
+        "_postman_id": "cf2b8651-9f6e-4a8e-bc6d-7e5bc0543e18",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -85,7 +85,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"application_date\":\"10\\\/04\\\/2022\",\"codes\":\"ACT152ACT3\",\"name\":\"Amar\",\"father_name\":\"Guddu\",\"dob\":\"16\\\/04\\\/1981\",\"address\":\"Parvathi Nilaya, 1st Main, Z Block, Sharma Nagar, Delhi - 100001\"}"
+                            "raw": "{\"application_date\":\"10\\\/04\\\/2022\",\"check_id\":\"ACT152ACT3\",\"name\":\"Amar\",\"father_name\":\"Guddu\",\"dob\":\"16\\\/04\\\/1981\",\"address\":\"Parvathi Nilaya, 1st Main, Z Block, Sharma Nagar, Delhi - 100001\"}"
                         },
                         "description": "",
                         "auth": {
@@ -96,7 +96,7 @@
                         {
                             "header": [],
                             "code": 200,
-                            "body": "{\n\"status\": true,\n\"message\": \"Candidate found successfully!\",\n\"data\": {\n\"application_date\": \"13\/04\/2023\",\n\"ref_no\": \"b0260c4d-699f-4149-ab3b-478d346fd44c\",\n\"codes\": \"Sanmisha\",\n\"name\": \"Sanjeev\",\n\"father_name\": \"Jayant\",\n\"dob\": \"16\/04\/1981\",\n\"address\": \"Dombivali\",\n\"status\": \"Pending\"\n}\n}",
+                            "body": "{\n\"status\": true,\n\"message\": \"Candidate found successfully!\",\n\"data\": {\n\"application_date\": \"13\/04\/2023\",\n\"ref_no\": \"b0260c4d-699f-4149-ab3b-478d346fd44c\",\n\"check_id\": \"ACT152ACT3\",\n\"name\": \"Sanjeev\",\n\"father_name\": \"Jayant\",\n\"dob\": \"16\/04\/1981\",\n\"address\": \"Dombivali\",\n\"status\": \"Pending\"\n}\n}",
                             "name": ""
                         }
                     ]
@@ -146,7 +146,7 @@
                         {
                             "header": [],
                             "code": 200,
-                            "body": "{\n\"status\": true,\n\"message\": \"Candidate found successfully!\",\n\"data\": {\n\"application_date\": \"13\/04\/2023\",\n\"ref_no\": \"b0260c4d-699f-4149-ab3b-478d346fd44c\",\n\"codes\": \"Sanmisha\",\n\"name\": \"Sanjeev\",\n\"father_name\": \"Jayant\",\n\"dob\": \"16\/04\/1981\",\n\"address\": \"Dombivali\",\n\"status\": \"Pending\"\n}\n}",
+                            "body": "{\n\"status\": true,\n\"message\": \"Candidate found successfully!\",\n\"data\": {\n\"application_date\": \"13\/04\/2023\",\n\"ref_no\": \"b0260c4d-699f-4149-ab3b-478d346fd44c\",\n\"check_id\": \"Sanmisha\",\n\"name\": \"Sanjeev\",\n\"father_name\": \"Jayant\",\n\"dob\": \"16\/04\/1981\",\n\"address\": \"Dombivali\",\n\"status\": \"Pending\"\n}\n}",
                             "name": ""
                         }
                     ]

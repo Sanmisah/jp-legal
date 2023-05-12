@@ -20,7 +20,7 @@ class CandidateController extends Controller
      * Request Candidate Status
      *
      * @bodyParam   application_date    string  required    dd/mm/yyyy format.      Example: 10/04/2022
-     * @bodyParam   codes               string  required    Codes for the Candidate.   Example: ACT152ACT3
+     * @bodyParam   check_id            string  required    Codes for the Candidate.   Example: ACT152ACT3
      * @bodyParam   name                string  required    Name of the Candidate.   Example: Amar
      * @bodyParam   father_name         string  required    Candidate Father name.   Example: Guddu
      * @bodyParam   dob                 string  required    dd/mm/yyyy format.   Example: 16/04/1981
@@ -32,7 +32,7 @@ class CandidateController extends Controller
      * "data": {
      * "application_date": "13/04/2023",
      * "ref_no": "b0260c4d-699f-4149-ab3b-478d346fd44c",
-     * "codes": "Sanmisha",
+     * "check_id": "ACT152ACT3",
      * "name": "Sanjeev",
      * "father_name": "Jayant",
      * "dob": "16/04/1981",
@@ -86,7 +86,7 @@ class CandidateController extends Controller
      * "data": {
      * "application_date": "13/04/2023",
      * "ref_no": "b0260c4d-699f-4149-ab3b-478d346fd44c",
-     * "codes": "Sanmisha",
+     * "check_id": "Sanmisha",
      * "name": "Sanjeev",
      * "father_name": "Jayant",
      * "dob": "16/04/1981",

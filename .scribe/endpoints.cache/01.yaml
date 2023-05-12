@@ -35,8 +35,8 @@ endpoints:
         example: 10/04/2022
         type: string
         custom: []
-      codes:
-        name: codes
+      check_id:
+        name: check_id
         description: 'Codes for the Candidate.'
         required: true
         example: ACT152ACT3
@@ -72,7 +72,7 @@ endpoints:
         custom: []
     cleanBodyParameters:
       application_date: 10/04/2022
-      codes: ACT152ACT3
+      check_id: ACT152ACT3
       name: Amar
       father_name: Guddu
       dob: 16/04/1981
@@ -88,7 +88,7 @@ endpoints:
           "data": {
           "application_date": "13/04/2023",
           "ref_no": "b0260c4d-699f-4149-ab3b-478d346fd44c",
-          "codes": "Sanmisha",
+          "check_id": "ACT152ACT3",
           "name": "Sanjeev",
           "father_name": "Jayant",
           "dob": "16/04/1981",
@@ -156,7 +156,7 @@ endpoints:
           "data": {
           "application_date": "13/04/2023",
           "ref_no": "b0260c4d-699f-4149-ab3b-478d346fd44c",
-          "codes": "Sanmisha",
+          "check_id": "Sanmisha",
           "name": "Sanjeev",
           "father_name": "Jayant",
           "dob": "16/04/1981",

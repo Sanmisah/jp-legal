@@ -61,7 +61,7 @@ paths:
                   data:
                     application_date: 13/04/2023
                     ref_no: b0260c4d-699f-4149-ab3b-478d346fd44c
-                    codes: Sanmisha
+                    check_id: ACT152ACT3
                     name: Sanjeev
                     father_name: Jayant
                     dob: 16/04/1981
@@ -83,9 +83,9 @@ paths:
                       ref_no:
                         type: string
                         example: b0260c4d-699f-4149-ab3b-478d346fd44c
-                      codes:
+                      check_id:
                         type: string
-                        example: Sanmisha
+                        example: ACT152ACT3
                       name:
                         type: string
                         example: Sanjeev
@@ -114,7 +114,7 @@ paths:
                   type: string
                   description: 'dd/mm/yyyy format.'
                   example: 10/04/2022
-                codes:
+                check_id:
                   type: string
                   description: 'Codes for the Candidate.'
                   example: ACT152ACT3
@@ -136,7 +136,7 @@ paths:
                   example: 'Parvathi Nilaya, 1st Main, Z Block, Sharma Nagar, Delhi - 100001'
               required:
                 - application_date
-                - codes
+                - check_id
                 - name
                 - father_name
                 - dob
@@ -171,7 +171,7 @@ paths:
                   data:
                     application_date: 13/04/2023
                     ref_no: b0260c4d-699f-4149-ab3b-478d346fd44c
-                    codes: Sanmisha
+                    check_id: Sanmisha
                     name: Sanjeev
                     father_name: Jayant
                     dob: 16/04/1981
@@ -193,7 +193,7 @@ paths:
                       ref_no:
                         type: string
                         example: b0260c4d-699f-4149-ab3b-478d346fd44c
-                      codes:
+                      check_id:
                         type: string
                         example: Sanmisha
                       name:
